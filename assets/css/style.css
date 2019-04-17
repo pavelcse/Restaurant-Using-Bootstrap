@@ -75,6 +75,10 @@ nav > div a.nav-item.nav-link:focus
     transition:background 0.20s linear;
 }
 
+.drop-icon::after {
+    display:none;
+}
+
 .activeMenu {
     background-color: gray !important;
     padding-right: 5px !important;

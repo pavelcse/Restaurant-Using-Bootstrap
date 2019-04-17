@@ -1,0 +1,806 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome-5.5.0/css/all.css">
+    <link rel="stylesheet" href="assets/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/timepicker-1.3.5/jquery.timepicker.min.css"/>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/timepicker-1.3.5/jquery.timepicker.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <style>
+        .drop-icon::after {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid bg-light">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <!--Header Start -->
+                    <div class="row shadow bg-warning py-2">
+                        <div class="col-md-4">
+                            <a href="index.html"><img style="max-width: 100px; outline: none;" class="img-fluid" src="assets/img/logo1.png" alt=""></a>
+                        </div>
+                        <div class="col-md-8 align-self-center d-flex justify-content-end">
+                            <div class="form-inline">
+
+                                <div class="btn-group">
+                                    <button class="btn btn-sm dropdown-toggle drop-icon" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img style="max-width: 45px" class="img-fluid" src="assets/img/language.png" alt="">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="btn btn-sm btn-block text-left py-0 border-bottom" href="">English</a>
+                                        <a class="btn btn-sm btn-block text-left py-0 border-bottom" href="">Italian</a>
+                                    </div>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button style="border-radius: 25px;" type="button"
+                                            class="btn btn-sm btn-info mx-2 px-3 dropdown-toggle drop-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-cart-plus"></i> Cart - (2)
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right mt-1" style="width: 300px">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="table-responsive">
+                                                    <table class="table table-borderless" style="font-size: 11px">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td width="2%"><i class="fas fa-trash-alt text-danger"></i></td>
+                                                            <td width="3%">01</td>
+                                                            <td width="75%">
+                                                                <b>Lorem ipsum dolor</b>
+                                                                <br>
+                                                                <span class="text-muted">
+                                                                        consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                                                    </span>
+                                                            </td>
+                                                            <td width="20%"><strong>$20.50</strong></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td width="2%"><i class="fas fa-trash-alt text-danger"></i></td>
+                                                            <td width="3%">02</td>
+                                                            <td width="75%">
+                                                                <b>Lorem ipsum dolor</b>
+                                                                <br>
+                                                                <span class="text-muted">
+                                                                        consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                                                    </span>
+                                                            </td>
+                                                            <td width="20%"><strong>$20.50</strong></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-2">
+                                            <div class="col-6">
+                                                <a href="cart.html" class="btn btn-sm btn-info btn-block">Cart Details</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="payment.html" class="btn btn-sm btn-info btn-block">Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-info mx-2 px-3 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-user"></i> Pavel Parvej
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right mt-1" style="width: 200px">
+                                        <div class="row">
+                                            <div class="col-6 text-center">
+                                                <a href="profile.html"><i class="fas fa-user text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="profile.html">Profile</a>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html"><i class="fas fa-cog text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html">Accounts</a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=e"><i
+                                                        class="fas fa-recycle text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=e">Post Order</a>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=f"><i
+                                                        class="far fa-calendar text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=f">Upcoming Order</a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=g"><i class="far fa-bookmark text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=g">Saved</a>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=d"><i
+                                                        class="fas fa-gift text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=d">Gift Cards</a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col mx-2">
+                                                <a class="btn btn-block btn-sm btn-info" href="login.html">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    $('div.btn-group').hover(function() {
+                                        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+                                    }, function() {
+                                        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+                                    });
+                                </script>
+                                <a class="btn btn-sm btn-info mx-2 px-3" href="help.html">Help</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Header-->
+                    <!--Body Content Start-->
+                    <div class="row justify-content-center mt-2">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-xl-2">
+                                    <img style="max-width: 150px;" class="img-fluid border border-info" src="assets/img/photo.jpg" alt="">
+                                    <h2>Good Food </h2>
+
+                                    <div class="list-group">
+                                        <a class="list-group-item border-0 bg-light text-dark py-1 pl-0 px-1" href="restaurant_home.html">Home</a>
+                                        <a class="list-group-item border-0 bg-light text-dark py-1 pl-0 px-1" href="table_booking.html">Table Booking</a>
+                                        <a class="list-group-item border-0 bg-light text-dark py-1 pl-0 px-1 activeMenu" href="catering.html">Catering Service</a>
+                                        <a class="list-group-item border-0 bg-light text-dark py-1 pl-0 px-1" href="gallery.html">Gallery</a>
+                                        <a class="list-group-item border-0 bg-light text-dark py-1 pl-0 px-1" href="offer.html">Offers</a>
+                                        <a class="list-group-item border-0 bg-light text-dark py-1 pl-0 px-1" href="about.html">About</a>
+                                        <a class="list-group-item border-0 bg-light text-dark py-1 pl-0 px-1" href="reviews.html">Reviews</a>
+                                        <a class="list-group-item border-0 bg-light text-dark py-1 pl-0 px-1" href="contact.html">Contact</a>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="col-xl-8">
+                                    <img style="max-height: 300px;" class="img-fluid w-100"
+                                         src="assets/img/banner1.jpg" alt="">
+                                    <div class="card mt-2">
+                                        <div class="card-body py-1 px-2">
+                                                <span>Lorem Ipsum is simply dummy text of the printing and
+                                                    typesetting industry. <span class="float-right"> <i
+                                                            class="fas fa-heart text-danger"></i> <i class="fas fa-share-alt-square text-primary"></i></span></span>
+                                            <br>
+                                            <small class="text-muted">14 Allison Avenue, Virginia Beach, VA, Virginia</small>
+                                            <br>
+                                            <small>
+                                                <i class="fas fa-star text-info"></i>
+                                                <i class="fas fa-star text-info"></i>
+                                                <i class="fas fa-star text-info"></i>
+                                                <i class="fas fa-star text-info"></i>
+                                                <i class="far fa-star text-info"></i>
+                                                <span class="text-muted mx-2"> 3548 ratings</span>
+                                                <span class="text-muted mx-2"> <b>90%</b> Food was good</span>
+                                                <span class="text-muted mx-2"> <b>85%</b> Delivery was on time</span>
+                                                <span class="text-muted mx-2"> <b>95%</b> Order was correct</span>
+                                                &nbsp; &nbsp; &nbsp;
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="col-sm-6 pr-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 pl-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="col-sm-6 pr-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 pl-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="col-sm-6 pr-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 pl-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="col-sm-6 pr-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 pl-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="col-sm-6 pr-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 pl-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="col-sm-6 pr-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 pl-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <img onclick="viewInfo()" style="max-width: 90px; cursor: pointer;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <div class="row">
+                                                                <div class="col-10">
+                                                                    <span style="cursor: pointer;" onclick="viewInfo()"><b>Lorem Ipsum is simply dummy</b></span>
+                                                                </div>
+                                                                <div class="col-2">
+                                                                    <span class="float-right btn btn-outline-info btn-sm">$25</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!--End Body Content-->
+                    <!--Footer Start-->
+                    <div class="row mt-3 justify-content-center mb-2">
+                        <div class="col-md-2">
+                            <p><b>Customer service</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Contact us</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Log in</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Sign up</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Blog</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Mobile Apps</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Suggest a restaurant</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Help</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">My account</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>Top cuisines</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Chinese</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Indian</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Italian</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Japanese</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Pizza delivery</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">View all cuisines</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>Locations</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Birmingham</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Cardiff</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Glasgow</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Leeds</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Manchester</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">View all locations</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>Top Brands</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Burger King</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">KFC</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Pizza Hut</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Subway</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Itsu</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">View all brands</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>A bit more about us</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Restaurant sign up</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Price Promise</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Privacy Policy</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Terms and Conditions</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Cookie Policy</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">About us</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Company website</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Careers</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Modern Slavery Statement</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row justify-content-center mb-2 align-items-center">
+                                <div class="col-md-3 mb-4">
+                                    <i class="fab fa-facebook-f fa-2x px-2 mt-3 text-primary"></i>
+                                    <i class="fab fa-twitter fa-2x px-2 mt-3 text-info"></i>
+                                    <i class="fab fa-youtube fa-2x px-2 mt-3 text-danger"></i>
+                                    <i class="fab fa-google-plus-g fa-2x px-2 mt-3 text-danger"></i>
+                                    <i class="fab fa-linkedin-in fa-2x px-2 mt-3 text-info"></i>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <img style="max-width: 80px;" src="assets/img/je-payment-logos-visa.png" alt=""
+                                         class="img-fluid mx-2">
+                                    <img style="max-width: 80px;" src="assets/img/je-payment-logos-mastercard.png" alt=""
+                                         class="img-fluid mx-2">
+                                    <img style="max-width: 80px;" src="assets/img/je-payment-logos-amex.png" alt=""
+                                         class="img-fluid mx-2">
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <p><b>Dounload Our App</b></p>
+                                    <img style="max-width: 80px;" src="assets/img/ios.svg" alt="" class="img-fluid mx-2">
+                                    <img style="max-width: 80px;" src="assets/img/android.svg" alt="" class="img-fluid mx-2">
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <i class="far fa-comments fa-2x mx-2 text-primary"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <span class="font-weight-bold">Feedback</span>
+                                            <br>
+                                            <small>Help us improve our website</small>
+                                            <br>
+                                            <small><a href="">Send feedback</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Footer-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal animated" id="itemInfo" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Lorem Ipsum is simply dummy</h5>
+                <button type="button" class="close" data-custom-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="text-center">
+                    <img style="max-width: 200px;" src="assets/img/food1.jpg" class="img-fluid" alt="">
+                </div>
+                <br>
+                <small class="text-muted"> It is a long established fact that a reader will be distracted</small>
+                <br>
+                <span class="float-right btn btn-outline-info btn-sm">$ <span id="item_price">25</span></span>
+                <div class="float-right px-2 d-inline float-left">
+                    <button id="item_dec" class="btn btn-sm btn-outline-secondary"><i class="fas fa-minus"></i></button>
+                    <input id="item_val" type="number" value="1" min="1" class="border-0 text-center w-25" readonly>
+                    <button id="item_inc" class="btn btn-sm btn-outline-secondary"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-custom-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info">Add to Bag</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End: Modal -->
+<!--Review Modal-->
+<div class="modal animated" id="review" tabindex="-1" role="dialog" aria-labelledby="reviewCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reviewTitle">Write a Review</h5>
+                <button type="button" class="close" data-custom-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name">Name <span class="text-danger">*</span></label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="text-danger">*</span></label>
+                    <input type="text" id="email" class="form-control" placeholder="Your Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" class="form-control" placeholder="Your Phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="review_msg">Review <span class="text-danger">*</span></label>
+                    <textarea name="" id="review_msg" class="form-control" placeholder="Write Review" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="star">Star</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-custom-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info">Submit Review</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function reviewModal() {
+        let modal = $('#review');
+
+        let animInClass = 'bounceIn';
+        let animOutClass = 'bounceOut';
+
+        modal.addClass(animInClass);
+        modal.modal({backdrop: false});
+
+        let closeModalBtns = modal.find('button[data-custom-dismiss="modal"]');
+        closeModalBtns.one('click', function() {
+            modal.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+                modal.modal('hide')
+            });
+            modal.removeClass(animInClass).addClass(animOutClass);
+        });
+
+        modal.removeClass(animOutClass);
+        modal.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+    }
+</script>
+<script>
+    function viewInfo(){
+        $("#item_val").val(1);
+        $("#item_price").text(25);
+        let modal = $('#itemInfo');
+
+        let animInClass = 'bounceIn';
+        let animOutClass = 'bounceOut';
+
+        modal.addClass(animInClass);
+        modal.modal({backdrop: false});
+
+        let closeModalBtns = modal.find('button[data-custom-dismiss="modal"]');
+        closeModalBtns.one('click', function() {
+            modal.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+                modal.modal('hide')
+            });
+            modal.removeClass(animInClass).addClass(animOutClass);
+        });
+
+        modal.removeClass(animOutClass);
+        modal.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+    }
+
+    let price = $("#item_price").text();
+    $("#item_inc").click(()=> {
+        let val = $("#item_val").val();
+        val++;
+        let item_price = val*price;
+        $("#item_val").val(val);
+        $("#item_price").text(item_price);
+    });
+
+    $("#item_dec").click(()=> {
+        let val = $("#item_val").val();
+        if(val > 1){
+            val--;
+        }
+        let item_price = val*price;
+        $("#item_val").val(val);
+        $("#item_price").text(item_price);
+    });
+</script>
+</body>
+</html>

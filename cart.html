@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome-5.5.0/css/all.css">
+    <link rel="stylesheet" href="assets/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/timepicker-1.3.5/jquery.timepicker.min.css"/>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <link rel="stylesheet" href="assets/css/progress_bar.css"/>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/timepicker-1.3.5/jquery.timepicker.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <style>
+        .drop-icon::after {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid bg-light">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <!--Header Start -->
+                    <div class="row shadow bg-warning py-2">
+                        <div class="col-md-4">
+                            <a href="index.html"><img style="max-width: 100px; outline: none;" class="img-fluid" src="assets/img/logo1.png" alt=""></a>
+                        </div>
+                        <div class="col-md-8 align-self-center d-flex justify-content-end">
+                            <div class="form-inline">
+
+                                <div class="btn-group">
+                                    <button class="btn btn-sm dropdown-toggle drop-icon" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img style="max-width: 45px" class="img-fluid" src="assets/img/language.png" alt="">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="btn btn-sm btn-block text-left py-0 border-bottom" href="">English</a>
+                                        <a class="btn btn-sm btn-block text-left py-0 border-bottom" href="">Italian</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button style="border-radius: 25px;" type="button"
+                                            class="btn btn-sm btn-info mx-2 px-3 dropdown-toggle drop-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-cart-plus"></i> Cart - (2)
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right mt-1" style="width: 300px">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="table-responsive">
+                                                    <table class="table table-borderless" style="font-size: 11px">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td width="2%"><i class="fas fa-trash-alt text-danger"></i></td>
+                                                            <td width="3%">01</td>
+                                                            <td width="75%">
+                                                                <b>Lorem ipsum dolor</b>
+                                                                <br>
+                                                                <span class="text-muted">
+                                                                        consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                                                    </span>
+                                                            </td>
+                                                            <td width="20%"><strong>$20.50</strong></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td width="2%"><i class="fas fa-trash-alt text-danger"></i></td>
+                                                            <td width="3%">02</td>
+                                                            <td width="75%">
+                                                                <b>Lorem ipsum dolor</b>
+                                                                <br>
+                                                                <span class="text-muted">
+                                                                        consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                                                    </span>
+                                                            </td>
+                                                            <td width="20%"><strong>$20.50</strong></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row p-2">
+                                            <div class="col-6">
+                                                <a href="cart.html" class="btn btn-sm btn-info btn-block">Cart Details</a>
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="payment.html" class="btn btn-sm btn-info btn-block">Checkout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-info mx-2 px-3 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-user"></i> Pavel Parvej
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right mt-1" style="width: 200px">
+                                        <div class="row">
+                                            <div class="col-6 text-center">
+                                                <a href="profile.html"><i class="fas fa-user text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="profile.html">Profile</a>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html"><i class="fas fa-cog text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html">Accounts</a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=e"><i
+                                                        class="fas fa-recycle text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=e">Post Order</a>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=f"><i
+                                                        class="far fa-calendar text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=f">Upcoming Order</a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=g"><i class="far fa-bookmark text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=g">Saved</a>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=d"><i
+                                                        class="fas fa-gift text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=d">Gift Cards</a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col mx-2">
+                                                <a class="btn btn-block btn-sm btn-info" href="login.html">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    $('div.btn-group').hover(function() {
+                                        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+                                    }, function() {
+                                        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+                                    });
+                                </script>
+                                <a class="btn btn-sm btn-info mx-2 px-3" href="help.html">Help</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Header-->
+                    <!--End Header-->
+                    <!--Body Content Start-->
+                    <div class="row justify-content-center mt-2">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-lg-8 mt-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4>My Cart</h4>
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>SL</th>
+                                                        <th>Item</th>
+                                                        <th>Price</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>01</td>
+                                                        <td>
+                                                            <b>Lorem ipsum dolor</b>
+                                                            <br>
+                                                            <small class="text-muted">
+                                                                consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                                            </small>
+                                                        </td>
+                                                        <td>$20,75</td>
+                                                        <td><i class="fas fa-trash-alt text-danger delete"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>01</td>
+                                                        <td>
+                                                            <b>Lorem ipsum dolor</b>
+                                                            <br>
+                                                            <small class="text-muted">
+                                                                consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                                            </small>
+                                                        </td>
+                                                        <td>$20,75</td>
+                                                        <td><i class="fas fa-trash-alt text-danger delete"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>01</td>
+                                                        <td>
+                                                            <b>Lorem ipsum dolor</b>
+                                                            <br>
+                                                            <small class="text-muted">
+                                                                consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                                            </small>
+                                                        </td>
+                                                        <td>$20,75</td>
+                                                        <td><i class="fas fa-trash-alt text-danger delete"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>01</td>
+                                                        <td>
+                                                            <b>Lorem ipsum dolor</b>
+                                                            <br>
+                                                            <small class="text-muted">
+                                                                consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                                            </small>
+                                                        </td>
+                                                        <td>$20,75</td>
+                                                        <td><i class="fas fa-trash-alt text-danger delete"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>01</td>
+                                                        <td>
+                                                            <b>Lorem ipsum dolor</b>
+                                                            <br>
+                                                            <small class="text-muted">
+                                                                consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                                            </small>
+                                                        </td>
+                                                        <td>$20,75</td>
+                                                        <td><i class="fas fa-trash-alt text-danger delete"></i></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-3">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col d-flex justify-content-between">
+                                                    <span> <input name="delivery_option" id="delivery" type="radio"> <label for="delivery">Delivery</label></span>
+                                                    <span> <input name="delivery_option" id="pickup" type="radio"> <label for="pickup">Pickup</label></span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row justify-content-around px-1 pl-3 my-1" >
+                                                <div class="col-6 col-sm-8 px-0">
+                                                    <p class="my-0">Lorem Ipsum</p>
+                                                </div>
+                                                <div class="col-6 col-sm-4 px-0">
+                                                    <p class="my-0">$4.50</p>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-around px-1 pl-3 my-1" >
+                                                <div class="col-6 col-sm-8 px-0">
+                                                    <p class="my-0">Lorem Ipsum</p>
+                                                </div>
+                                                <div class="col-6 col-sm-4 px-0">
+                                                    <p class="my-0">$4.50</p>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-around px-1 pl-3 my-1" >
+                                                <div class="col-6 col-sm-8 px-0">
+                                                    <p class="my-0">Lorem Ipsum</p>
+                                                </div>
+                                                <div class="col-6 col-sm-4 px-0">
+                                                    <p class="my-0">$4.50</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row justify-content-around px-1 pl-3 my-1">
+                                                <div class="col-6 col-sm-8 px-0">
+                                                    <p class="my-0">Subtotal</p>
+                                                </div>
+                                                <div class="col-6 col-sm-4 px-0">
+                                                    <p class="my-0">$24.00</p>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-around px-1 pl-3 my-1">
+                                                <div class="col-6 col-sm-8 px-0">
+                                                    <p class="my-0">Delivery Fee</p>
+                                                </div>
+                                                <div class="col-6 col-sm-4 px-0">
+                                                    <p class="my-0">$00.00</p>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+                                            <div class="row justify-content-around px-1 pl-3 my-1">
+                                                <div class="col-6 col-sm-8 px-0">
+                                                    <h6 class="my-0">Total</h6>
+                                                </div>
+                                                <div class="col-6 col-sm-4 px-0">
+                                                    <h6 class="my-0">$24.00</h6>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6>Apply Coupon:</h6>
+                                                    <div class="row">
+                                                        <div class="col-xl-8">
+                                                            <div class="form-group">
+                                                                <input type="text" class="form-control" placeholder="Coupon Code">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <div class="form-group">
+                                                                <button class="btn btn-info btn-block">Apply</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row mt-2">
+                                                <div class="col-12">
+                                                    <h6>We Accept:</h6>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <img style="max-height: 30px" class="img-fluid" src="assets/img/paypal.png" alt="">
+                                                            <img style="max-height: 30px" class="img-fluid" src="assets/img/visa.png" alt="">
+                                                            <img style="max-height: 30px" class="img-fluid" src="assets/img/visa.png" alt="">
+                                                            <img style="max-height: 30px" class="img-fluid" src="assets/img/mastercard.jpg" alt="">
+                                                            <img style="max-height: 30px" class="img-fluid" src="assets/img/american_express.png" alt="">
+                                                            <img style="max-height: 30px" class="img-fluid" src="assets/img/western-union.jpeg" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row mt-2">
+                                                <div class="col">
+                                                    <a class="btn btn-secondary btn-block btn-sm"
+                                                       href="payment.html"> Checkout </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!--End Body Content-->
+                    <!--Footer Start-->
+                    <div class="row mt-3 justify-content-center mb-2">
+                        <div class="col-md-2">
+                            <p><b>Customer service</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Contact us</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Log in</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Sign up</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Blog</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Mobile Apps</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Suggest a restaurant</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Help</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">My account</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>Top cuisines</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Chinese</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Indian</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Italian</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Japanese</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Pizza delivery</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">View all cuisines</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>Locations</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Birmingham</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Cardiff</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Glasgow</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Leeds</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Manchester</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">View all locations</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>Top Brands</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Burger King</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">KFC</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Pizza Hut</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Subway</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Itsu</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">View all brands</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>A bit more about us</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Restaurant sign up</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Price Promise</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Privacy Policy</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Terms and Conditions</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Cookie Policy</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">About us</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Company website</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Careers</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Modern Slavery Statement</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row justify-content-center mb-2 align-items-center">
+                                <div class="col-md-3 mb-4">
+                                    <i class="fab fa-facebook-f fa-2x px-2 mt-3 text-primary"></i>
+                                    <i class="fab fa-twitter fa-2x px-2 mt-3 text-info"></i>
+                                    <i class="fab fa-youtube fa-2x px-2 mt-3 text-danger"></i>
+                                    <i class="fab fa-google-plus-g fa-2x px-2 mt-3 text-danger"></i>
+                                    <i class="fab fa-linkedin-in fa-2x px-2 mt-3 text-info"></i>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <img style="max-width: 80px;" src="assets/img/je-payment-logos-visa.png" alt=""
+                                         class="img-fluid mx-2">
+                                    <img style="max-width: 80px;" src="assets/img/je-payment-logos-mastercard.png" alt=""
+                                         class="img-fluid mx-2">
+                                    <img style="max-width: 80px;" src="assets/img/je-payment-logos-amex.png" alt=""
+                                         class="img-fluid mx-2">
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <p><b>Dounload Our App</b></p>
+                                    <img style="max-width: 80px;" src="assets/img/ios.svg" alt="" class="img-fluid mx-2">
+                                    <img style="max-width: 80px;" src="assets/img/android.svg" alt="" class="img-fluid mx-2">
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <i class="far fa-comments fa-2x mx-2 text-primary"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <span class="font-weight-bold">Feedback</span>
+                                            <br>
+                                            <small>Help us improve our website</small>
+                                            <br>
+                                            <small><a href="">Send feedback</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Footer-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Review Modal-->
+<div class="modal animated" id="review" tabindex="-1" role="dialog" aria-labelledby="reviewCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reviewTitle">Write a Review</h5>
+                <button type="button" class="close" data-custom-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="name">Name <span class="text-danger">*</span></label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email <span class="text-danger">*</span></label>
+                    <input type="text" id="email" class="form-control" placeholder="Your Email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" class="form-control" placeholder="Your Phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="review_msg">Review <span class="text-danger">*</span></label>
+                    <textarea name="" id="review_msg" class="form-control" placeholder="Write Review" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="star">Star</label>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+                    <i class="far fa-star text-warning"></i>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-custom-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info">Submit Review</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".delete").click(function() {
+        Swal.fire({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          type: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+          if (result.value) {
+            Swal.fire(
+              'Deleted!',
+              'Your file has been deleted.',
+              'success'
+              )
+        }
+    })
+  });
+</script>
+
+<script>
+    function reviewModal() {
+        let modal = $('#review');
+
+        let animInClass = 'bounceIn';
+        let animOutClass = 'bounceOut';
+
+        modal.addClass(animInClass);
+        modal.modal({backdrop: false});
+
+        let closeModalBtns = modal.find('button[data-custom-dismiss="modal"]');
+        closeModalBtns.one('click', function() {
+            modal.on('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
+                modal.modal('hide')
+            });
+            modal.removeClass(animInClass).addClass(animOutClass);
+        });
+
+        modal.removeClass(animOutClass);
+        modal.off('webkitAnimationEnd oanimationend msAnimationEnd animationend');
+    }
+</script>
+</body>
+</html>

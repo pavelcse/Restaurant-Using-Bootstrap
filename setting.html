@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome-5.5.0/css/all.css">
+    <link rel="stylesheet" href="assets/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/timepicker-1.3.5/jquery.timepicker.min.css"/>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/timepicker-1.3.5/jquery.timepicker.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+<div class="container-fluid bg-light">
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <!--Header Start -->
+                    <div class="row shadow bg-warning py-2">
+                        <div class="col-md-4">
+                            <a href="index.html"><img style="max-width: 100px; outline: none;" class="img-fluid" src="assets/img/logo1.png" alt=""></a>
+                        </div>
+                        <div class="col-md-8 align-self-center d-flex justify-content-end">
+                            <div class="form-inline">
+
+                                <div class="btn-group">
+                                    <button class="btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img style="max-width: 45px" class="img-fluid" src="assets/img/language.png" alt="">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="btn btn-sm btn-block text-left py-0 border-bottom" href="">English</a>
+                                        <a class="btn btn-sm btn-block text-left py-0 border-bottom" href="">Italian</a>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-info mx-2 px-3 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-user"></i> Pavel Parvej
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right mt-1" style="width: 200px">
+                                        <div class="row">
+                                            <div class="col-6 text-center">
+                                                <a href="profile.html"><i class="fas fa-user text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="profile.html">Profile</a>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html"><i class="fas fa-cog text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html">Accounts</a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=e"><i
+                                                        class="fas fa-recycle text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=e">Post Order</a>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=f"><i
+                                                        class="far fa-calendar text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=f">Upcoming Order</a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=g"><i class="far fa-bookmark text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=g">Saved</a>
+                                            </div>
+                                            <div class="col-6 text-center">
+                                                <a href="setting.html?tab=d"><i
+                                                        class="fas fa-gift text-info"></i></a>
+                                                <br>
+                                                <a class="btn btn-sm" href="setting.html?tab=d">Gift Cards</a>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <div class="col mx-2">
+                                                <a class="btn btn-block btn-sm btn-info" href="login.html">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    $('div.btn-group').hover(function() {
+                                        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+                                    }, function() {
+                                        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+                                    });
+                                </script>
+                                <a class="btn btn-sm btn-info mx-2 px-3" href="help.html">Help</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Header-->
+                    <!--Body Content Start-->
+                    <div class="row justify-content-center mt-2">
+                        <div class="col-md-11 col-lg-10 col-xl-8">
+                            <div class="row">
+                                <div class="col">
+                                    <h3>Account Settings</h3>
+                                    <hr>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-2 list-group">
+                                                    <a id="a" class="list-group-item btn text-left active" href="#tab_a" data-toggle="pill">Profile</a>
+                                                    <a id="b" class="list-group-item btn text-left" href="#tab_b" data-toggle="pill">Contacts</a>
+                                                    <a id="c" class="list-group-item btn text-left" href="#tab_c" data-toggle="pill">Payments</a>
+                                                    <a id="d" class="list-group-item btn text-left" href="#tab_d" data-toggle="pill">Gift Cards</a>
+                                                    <a id="e" class="list-group-item btn text-left" href="#tab_E" data-toggle="pill">Post Orders</a>
+                                                    <a id="f" class="list-group-item btn text-left" href="#tab_F" data-toggle="pill">Upcoming Orders</a>
+                                                    <a id="g" class="list-group-item btn text-left" href="#tab_G" data-toggle="pill">Save Restaurants</a>
+                                                </div>
+                                                <div class="tab-content col-md-10">
+                                                    <div class="tab-pane active" id="tab_a">
+                                                        <h4>Your Account
+                                                            <a href="#" class="btn btn-sm btn-info float-right">
+                                                                <i class="fas fa-edit"></i> Edit
+                                                            </a>
+                                                        </h4>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="mb-2">
+                                                                    <h5>Name</h5>
+                                                                    <span class="text-muted">Pavel Parvej</span>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <h5>Designation</h5>
+                                                                    <span class="text-muted">Software Engineer</span>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <h5>Email</h5>
+                                                                    <span class="text-muted">pavel@email.com</span>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <h5>Password</h5>
+                                                                    <span class="text-muted">******************</span>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <h5>About</h5>
+                                                                    <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 border-left">
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <p><b>Profile photo</b></p>
+                                                                        <img src="assets/img/profile.jpg" style="width: 150px; height: 150px;" class="img-fluid rounded-circle float-right" alt="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <p><b>Cover Photo</b></p>
+                                                                        <img src="assets/img/cover_banner.jpg" style="max-width: 350px; max-height: 200px;" class="img-fluid float-right" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane" id="tab_b">
+                                                        <h4>Contact Info
+                                                            <a href="#" class="btn btn-sm btn-info float-right">
+                                                                <i class="fas fa-edit"></i> Edit
+                                                            </a>
+                                                        </h4>
+                                                        <hr>
+                                                        <div class="mb-2">
+                                                            <h5>Address</h5>
+                                                            <span class="text-muted"> Michael I. Days 3756 Preston Street Wichita,</span>
+                                                            <br>
+                                                            <span class="text-muted"> KS 67213 Phone:857-778-1265 </span>
+                                                        </div>
+                                                        <div class="mb-2">
+                                                            <h5>Phone</h5>
+                                                            <span class="text-muted">+9587 65846597</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane" id="tab_c">
+                                                        <h4>Payments
+                                                            <a href="#" class="btn btn-sm btn-info float-right">
+                                                                <i class="fas fa-edit"></i> Edit
+                                                            </a>
+                                                        </h4>
+                                                        <hr>
+                                                        <p>You have no saved payment methods</p>
+                                                        <button class="btn btn-sm btn-info px-2"><i class="far fa-plus-square"></i> Add Card</button>
+                                                    </div>
+
+                                                    <div class="tab-pane" id="tab_d">
+                                                        <h4>Gift Cards</h4>
+                                                        <hr>
+                                                        <p>No gift card available</p>
+                                                        <button class="btn btn-sm btn-info px-2">Buy a Gift Card</button>
+                                                        <button class="btn btn-sm btn-info px-2">Redeem a Gift
+                                                            Cart</button>
+                                                    </div>
+
+                                                    <div class="tab-pane" id="tab_E">
+                                                        <h4>Post Orders</h4>
+                                                        <hr>
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <div class="row">
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p class="my-0">Ordered Placed</p>
+                                                                        <p class="my-0">28 Feb 2019</p>
+                                                                    </div>
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p class="my-0">Total</p>
+                                                                        <p class="my-0">$200</p>
+                                                                    </div>
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p class="my-0">Order #1235978-125647</p>
+                                                                        <p class="my-0"><a
+                                                                                href="order_details.html">Order
+                                                                            Details</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <h5><b>Lorem Ipsum is simply dummy text</b></h5>
+                                                                                <span>It is a long established fact that a reader will be distracted by the readable content. </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mt-3">
+                                                                            <div class="col-sm-2">
+                                                                                <img src="assets/img/food1.jpg"
+                                                                                     class="img-fluid float-lg-right"
+                                                                                     style="max-height: 50px" alt="">
+                                                                            </div>
+                                                                            <div class="col-sm-10">
+                                                                                <p class="my-0">Lorem Ipsum is simply</p>
+                                                                                <p class="my-0">Sold by: Good Food</p>
+                                                                                <p class="my-0">$10</p>
+                                                                                <button class="btn btn-sm btn-info">Buy Again</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-4 mt-2">
+                                                                        <button class="btn btn-sm btn-light btn-block btn-outline-dark">Write a
+                                                                            Review</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card mt-2">
+                                                            <div class="card-header">
+                                                                <div class="row">
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p class="my-0">Ordered Placed</p>
+                                                                        <p class="my-0">28 Feb 2019</p>
+                                                                    </div>
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p class="my-0">Total</p>
+                                                                        <p class="my-0">$200</p>
+                                                                    </div>
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p class="my-0">Order #1235978-125647</p>
+                                                                        <p class="my-0"><a
+                                                                                href="order_details.html">Order
+                                                                            Details</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <h5><b>Lorem Ipsum is simply dummy text</b></h5>
+                                                                                <span>It is a long established fact that a reader will be distracted by the readable content. </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mt-3">
+                                                                            <div class="col-sm-2">
+                                                                                <img src="assets/img/food1.jpg"
+                                                                                     class="img-fluid float-lg-right"
+                                                                                     style="max-height: 50px" alt="">
+                                                                            </div>
+                                                                            <div class="col-sm-10">
+                                                                                <p class="my-0">Lorem Ipsum is simply</p>
+                                                                                <p class="my-0">Sold by: Good Food</p>
+                                                                                <p class="my-0">$10</p>
+                                                                                <button class="btn btn-sm btn-info">Buy Again</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-4 mt-2">
+                                                                        <button class="btn btn-sm btn-light btn-block btn-outline-dark">Write a
+                                                                            Review</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card mt-2">
+                                                            <div class="card-header">
+                                                                <div class="row">
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p class="my-0">Ordered Placed</p>
+                                                                        <p class="my-0">28 Feb 2019</p>
+                                                                    </div>
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p class="my-0">Total</p>
+                                                                        <p class="my-0">$200</p>
+                                                                    </div>
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p class="my-0">Order #1235978-125647</p>
+                                                                        <p class="my-0"><a
+                                                                                href="order_details.html">Order
+                                                                            Details</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <h5><b>Lorem Ipsum is simply dummy text</b></h5>
+                                                                                <span>It is a long established fact that a reader will be distracted by the readable content. </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mt-3">
+                                                                            <div class="col-sm-2">
+                                                                                <img src="assets/img/food1.jpg"
+                                                                                     class="img-fluid float-lg-right"
+                                                                                     style="max-height: 50px" alt="">
+                                                                            </div>
+                                                                            <div class="col-sm-10">
+                                                                                <p class="my-0">Lorem Ipsum is simply</p>
+                                                                                <p class="my-0">Sold by: Good Food</p>
+                                                                                <p class="my-0">$10</p>
+                                                                                <button class="btn btn-sm btn-info">Buy Again</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-4 mt-2">
+                                                                        <button class="btn btn-sm btn-light btn-block btn-outline-dark">Write a
+                                                                            Review</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane" id="tab_F">
+                                                        <h4>Upcoming Orders</h4>
+                                                        <hr>
+                                                        <div class="card">
+                                                            <div class="card-header">
+                                                                <div class="row">
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p>Ordered Placed</p>
+                                                                        <p>28 Feb 2019</p>
+                                                                    </div>
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p>Total</p>
+                                                                        <p>$200</p>
+                                                                    </div>
+                                                                    <div class="col-sm-4 text-center">
+                                                                        <p>Order #1235978-125647</p>
+                                                                        <p><a href="order_details.html">Order Details</a></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-sm-8">
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <h5><b>Lorem Ipsum is simply dummy text</b></h5>
+                                                                                <span>It is a long established fact that a reader will be distracted by the readable content. </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row mt-3">
+                                                                            <div class="col-sm-2">
+                                                                                <img src="assets/img/food1.jpg"
+                                                                                     class="img-fluid float-lg-right"
+                                                                                     style="max-height: 50px" alt="">
+                                                                            </div>
+                                                                            <div class="col-sm-10">
+                                                                                <p class="my-0">Lorem Ipsum is simply</p>
+                                                                                <p class="my-0">Sold by: Good Food</p>
+                                                                                <p class="my-0">$10</p>
+                                                                                <button class="btn btn-sm btn-info">Buy Again</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-4 mt-2">
+                                                                        <a
+                                                                                class="btn btn-sm btn-light btn-block btn-outline-dark my-1"
+                                                                           href="track_order.html">Track Order</a>
+                                                                        <button
+                                                                                class="btn btn-sm btn-light btn-block btn-outline-dark my-1">Cancel Order</button>
+                                                                        <button
+                                                                                class="btn btn-sm btn-light btn-block btn-outline-dark my-1">Write a Review</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab_G">
+                                                        <h4>Saved Restaurants</h4>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-sm-2">
+                                                                <img src="assets/img/burger.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <h5>Little Italy Pizza (Fulton St.)</h5>
+                                                                <small>50 Fulton St, New York, NY, 10038</small>
+                                                                <br>
+                                                                <small>Dinner, Lunch Specials</small>
+                                                                <br>
+                                                                <small>4042 ratings</small>
+                                                                <br>
+                                                                <small>Min $10</small>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <button class="btn btn-info btn-sm btn-block">Start Order</button>
+                                                                <button onclick="deleteSaved()" class="btn btn-danger btn-sm btn-block">Remove From List</button>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-sm-2">
+                                                                <img src="assets/img/burger.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <h5>Little Italy Pizza (Fulton St.)</h5>
+                                                                <small>50 Fulton St, New York, NY, 10038</small>
+                                                                <br>
+                                                                <small>Dinner, Lunch Specials</small>
+                                                                <br>
+                                                                <small>4042 ratings</small>
+                                                                <br>
+                                                                <small>Min $10</small>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <button class="btn btn-info btn-sm btn-block">Start Order</button>
+                                                                <button onclick="deleteSaved()" class="btn btn-danger btn-sm btn-block">Remove From List</button>
+                                                            </div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-sm-2">
+                                                                <img src="assets/img/burger.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <h5>Little Italy Pizza (Fulton St.)</h5>
+                                                                <small>50 Fulton St, New York, NY, 10038</small>
+                                                                <br>
+                                                                <small>Dinner, Lunch Specials</small>
+                                                                <br>
+                                                                <small>4042 ratings</small>
+                                                                <br>
+                                                                <small>Min $10</small>
+                                                            </div>
+                                                            <div class="col-sm-2">
+                                                                <button class="btn btn-info btn-sm btn-block">Start Order</button>
+                                                                <button onclick="deleteSaved()" class="btn btn-danger btn-sm btn-block">Remove From List</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- tab content -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!--End Body Content-->
+                    <!--Footer Start-->
+                    <div class="row mt-3 justify-content-center mb-2">
+                        <div class="col-md-2">
+                            <p><b>Customer service</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Contact us</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Log in</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Sign up</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Blog</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Mobile Apps</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Suggest a restaurant</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Help</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">My account</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>Top cuisines</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Chinese</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Indian</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Italian</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Japanese</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Pizza delivery</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">View all cuisines</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>Locations</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Birmingham</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Cardiff</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Glasgow</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Leeds</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Manchester</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">View all locations</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>Top Brands</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Burger King</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">KFC</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Pizza Hut</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Subway</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Itsu</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">View all brands</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <p><b>A bit more about us</b></p>
+                            <hr>
+                            <div class="list-group">
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Restaurant sign up</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Price Promise</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Privacy Policy</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Terms and Conditions</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Cookie Policy</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">About us</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Company website</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Careers</a>
+                                <a href="" class="text-dark mb-1" style="text-decoration: none;">Modern Slavery Statement</a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="row justify-content-center mb-2 align-items-center">
+                                <div class="col-md-3 mb-4">
+                                    <i class="fab fa-facebook-f fa-2x px-2 mt-3 text-primary"></i>
+                                    <i class="fab fa-twitter fa-2x px-2 mt-3 text-info"></i>
+                                    <i class="fab fa-youtube fa-2x px-2 mt-3 text-danger"></i>
+                                    <i class="fab fa-google-plus-g fa-2x px-2 mt-3 text-danger"></i>
+                                    <i class="fab fa-linkedin-in fa-2x px-2 mt-3 text-info"></i>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <img style="max-width: 80px;" src="assets/img/je-payment-logos-visa.png" alt=""
+                                         class="img-fluid mx-2">
+                                    <img style="max-width: 80px;" src="assets/img/je-payment-logos-mastercard.png" alt=""
+                                         class="img-fluid mx-2">
+                                    <img style="max-width: 80px;" src="assets/img/je-payment-logos-amex.png" alt=""
+                                         class="img-fluid mx-2">
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <p><b>Dounload Our App</b></p>
+                                    <img style="max-width: 80px;" src="assets/img/ios.svg" alt="" class="img-fluid mx-2">
+                                    <img style="max-width: 80px;" src="assets/img/android.svg" alt="" class="img-fluid mx-2">
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <i class="far fa-comments fa-2x mx-2 text-primary"></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <span class="font-weight-bold">Feedback</span>
+                                            <br>
+                                            <small>Help us improve our website</small>
+                                            <br>
+                                            <small><a href="">Send feedback</a></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Footer-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function() {
+        function getQueryVariable(variable)
+        {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i=0;i<vars.length;i++) {
+                var pair = vars[i].split("=");
+                if(pair[0] == variable){return pair[1];}
+            }
+            return(false);
+        }
+        var tab = getQueryVariable("tab");
+        if(tab){
+            $("#"+tab).click();
+        }
+    });
+</script>
+
+<script>
+    function deleteSaved() {
+        Swal.fire({
+          title: 'Are you sure?',
+          text: "You won't be able to revert this!",
+          type: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+          if (result.value) {
+            Swal.fire(
+              'Deleted!',
+              'Your file has been deleted.',
+              'success'
+              )
+        }
+    })
+  }
+</script>
+</body>
+</html>

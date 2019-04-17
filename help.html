@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome-5.5.0/css/all.css">
+    <link rel="stylesheet" href="assets/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/timepicker-1.3.5/jquery.timepicker.min.css"/>
+    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/timepicker-1.3.5/jquery.timepicker.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid bg-light">
+    <div class="row justify-content-center">
+        <div class="col">
+            <!--Header Start -->
+            <div class="row shadow bg-warning py-2">
+                <div class="col-md-4">
+                    <a href="index.html"><img style="max-width: 100px; outline: none;" class="img-fluid" src="assets/img/logo1.png" alt=""></a>
+                </div>
+                <div class="col-md-8 align-self-center d-flex justify-content-end">
+                    <div class="form-inline col-md-3">
+                        <div class="btn-group">
+                            <button class="btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img style="max-width: 45px" class="img-fluid" src="assets/img/language.png" alt="">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="btn btn-sm btn-block text-left py-0 border-bottom" href="">English</a>
+                                <a class="btn btn-sm btn-block text-left py-0 border-bottom" href="">Italian</a>
+                            </div>
+                        </div>
+                        <script>
+                            $('div.btn-group').hover(function() {
+                                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+                            }, function() {
+                                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+                            });
+                        </script>
+                        <a class="btn btn-sm btn-info mx-2 px-3 my-1" href="login.html">Login</a>
+                        <a class="btn btn-sm btn-info mx-2 px-3 my-1" href="help.html">Help</a>
+                    </div>
+                </div>
+            </div>
+            <!--End Header-->
+            <!--Body Content Start-->
+            <div class="row mt-3">
+                <div class="col text-center px-0">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3>Hi, Pavel. What can we help you with? </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-5 bg-white">
+                <div class="col-md-10 col-lg-7">
+                    <div class="row my-2">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="assets/img/order.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="#"><h5>Your Orders</h5></a>
+                                    <ul>
+                                        <li>Track packages </li>
+                                        <li>Edit or cancel orders </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="assets/img/order_return.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="#"><h5>Returns & Refunds</h5></a>
+                                    <ul>
+                                        <li>Return or exchange items</li>
+                                        <li>Print return mailing labels </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="assets/img/services.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="#"><h5>Digital Services and Device Support</h5></a>
+                                    <ul>
+                                        <li>Find device help & support</li>
+                                        <li>Edit or cancel orders </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="assets/img/prime.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="#"><h5>Manage Prime</h5></a>
+                                    <ul>
+                                        <li>Learn about Prime benefits</li>
+                                        <li>Cancel Prime membership</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="assets/img/payments.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="#"><h5>Payments & Gift Cards</h5></a>
+                                    <ul>
+                                        <li>Add or edit payment methods</li>
+                                        <li>View, reload gift card balance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="assets/img/account.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-9">
+                                    <a href="#"><h5>Account Settings</h5></a>
+                                    <ul>
+                                        <li>Update login information</li>
+                                        <li>Change email or password</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row pb-4">
+                        <div class="col">
+                            <p><b>Find More Solutions</b></p>
+                            <div class="row">
+                                <div class="col-sm-10 my-1">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <div class="col-sm-2 my-1">
+                                    <button class="btn btn-light btn-outline-secondary">Find</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="row bg-white justify-content-center py-4">
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Browse Help Topics </h3>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4 border-right">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Recommended Topics</a>
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Where's My Stuff?</a>
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Managing Your Orders</a>
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Account Settings & Payment Methods</a>
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Returns & Refunds</a>
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Shipping Policies</a>
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Amazon Devices</a>
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Digital Services & Content</a>
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Amazon Business Accounts</a>
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Other Topics & Help Sites</a>
+                                                <a href="#" class="list-group-item border-0 p-1 text-dark">Need More Help?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <hr>
+            <!--End Body Content-->
+            <!--Footer Start-->
+            <div class="row mt-3 justify-content-center mb-2">
+                <div class="col-md-2">
+                    <p><b>Customer service</b></p>
+                    <hr>
+                    <div class="list-group">
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Contact us</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Log in</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Sign up</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Blog</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Mobile Apps</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Suggest a restaurant</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Help</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">My account</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p><b>Top cuisines</b></p>
+                    <hr>
+                    <div class="list-group">
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Chinese</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Indian</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Italian</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Japanese</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Pizza delivery</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">View all cuisines</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p><b>Locations</b></p>
+                    <hr>
+                    <div class="list-group">
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Birmingham</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Cardiff</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Glasgow</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Leeds</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Manchester</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">View all locations</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p><b>Top Brands</b></p>
+                    <hr>
+                    <div class="list-group">
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Burger King</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">KFC</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Pizza Hut</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Subway</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Itsu</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">View all brands</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p><b>A bit more about us</b></p>
+                    <hr>
+                    <div class="list-group">
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Restaurant sign up</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Price Promise</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Privacy Policy</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Terms and Conditions</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Cookie Policy</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">About us</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Company website</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Careers</a>
+                        <a href="" class="text-dark mb-1" style="text-decoration: none;">Modern Slavery Statement</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="row justify-content-center mb-2 align-items-center">
+                        <div class="col-md-3 mb-4">
+                            <i class="fab fa-facebook-f fa-2x px-2 mt-3 text-primary"></i>
+                            <i class="fab fa-twitter fa-2x px-2 mt-3 text-info"></i>
+                            <i class="fab fa-youtube fa-2x px-2 mt-3 text-danger"></i>
+                            <i class="fab fa-google-plus-g fa-2x px-2 mt-3 text-danger"></i>
+                            <i class="fab fa-linkedin-in fa-2x px-2 mt-3 text-info"></i>
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <img style="max-width: 80px;" src="assets/img/je-payment-logos-visa.png" alt=""
+                                 class="img-fluid mx-2">
+                            <img style="max-width: 80px;" src="assets/img/je-payment-logos-mastercard.png" alt=""
+                                 class="img-fluid mx-2">
+                            <img style="max-width: 80px;" src="assets/img/je-payment-logos-amex.png" alt=""
+                                 class="img-fluid mx-2">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <p><b>Dounload Our App</b></p>
+                            <img style="max-width: 80px;" src="assets/img/ios.svg" alt="" class="img-fluid mx-2">
+                            <img style="max-width: 80px;" src="assets/img/android.svg" alt="" class="img-fluid mx-2">
+                        </div>
+                        <div class="col-md-3 mb-4">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <i class="far fa-comments fa-2x mx-2 text-primary"></i>
+                                </div>
+                                <div class="col-6">
+                                    <span class="font-weight-bold">Feedback</span>
+                                    <br>
+                                    <small>Help us improve our website</small>
+                                    <br>
+                                    <small><a href="">Send feedback</a></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Footer-->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

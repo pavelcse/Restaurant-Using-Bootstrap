@@ -73,7 +73,7 @@
                                             <!--<input type="text" class="form-control text-center" placeholder="Search your location">-->
                                             <div class="form-group has-search mb-1">
                                                 <span class="fas fa-map-marker-alt form-control-feedback pt-2 pt-lg-0"></span>
-                                                <input type="text" class="form-control" placeholder="Search your location">
+                                                <input id="location" type="text" class="form-control" placeholder="Search your location">
                                             </div>
                                         </div>
                                     </div>
@@ -1757,6 +1757,20 @@
         </div>
     </div>
 </div>
+
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+<script>
+    
+jQuery(document).ready(function() {
+
+    var country = geoplugin_countryName();
+    var region = geoplugin_region();
+    var city = geoplugin_city();
+
+    $("#location").val(country+', '+region+', '+city);
+});
+
+</script>
 
 </body>
 </html>
